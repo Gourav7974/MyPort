@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+  font-family: 'Courier New', monospace; /* Monospaced font for hacker look */
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Dark background */
+  color: #00ff00; /* Neon green text */
+}
+
+a {
+  text-decoration: none;
+  color: #00ff00; /* Neon green links */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff3300; /* Red on hover */
+}
+
+header {
+  background-color: #0d0d0d; /* Dark background for header */
+  color: #00ff00; /* Green text in header */
+}
+
+header .navbar {
+  padding: 1rem;
+}
+
+header .navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff00; /* Neon green navbar brand */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+  color: #00ff00; /* Green nav links */
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #ff3300; /* Red hover effect */
+}
+
+/* Main Section Styles */
+section {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Experience Section */
+#experience {
+  background-color: #0d0d0d; /* Dark background for sections */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); /* Glow effect */
+}
+
+#experience h2 {
+  color: #00ff00; /* Green headings */
+}
+
+#experience h3 {
+  color: #00ff00;
+  margin-top: 20px;
+}
+
+#experience ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#experience ul li {
+  margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #0d0d0d;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+#projects h2 {
+  color: #00ff00;
+}
+
+#projects h3 {
+  color: #00ff00;
+  margin-top: 20px;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#projects ul li {
+  margin-bottom: 10px;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #0d0d0d;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+#skills h2 {
+  color: #00ff00;
+}
+
+#skills h4 {
+  color: #00ff00;
+  margin-top: 20px;
+}
+
+#skills p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Certifications Section */
+#certifications {
+  background-color: #0d0d0d;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+#certifications h2 {
+  color: #00ff00;
+}
+
+#certifications ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#certifications ul li {
+  margin-bottom: 10px;
+}
+
+/* About Section */
+#about {
+  background-color: #0d0d0d;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+#about h2 {
+  color: #00ff00;
+}
+
+#about p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #0d0d0d;
+  color: #00ff00;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
