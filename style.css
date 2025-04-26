@@ -5,6 +5,9 @@ body {
   padding: 0;
   background-color: #1a1a1a; /* Dark background */
   color: #00ff00; /* Neon green text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body takes up full viewport height */
 }
 
 a {
@@ -17,13 +20,20 @@ a:hover {
   color: #ff3300; /* Red on hover */
 }
 
+/* Header Styles */
 header {
   background-color: #0d0d0d; /* Dark background for header */
   color: #00ff00; /* Green text in header */
+  top: 0;
+  z-index: 1000; /* Keep header above content */
+  position: sticky; /* Makes header stick to top */
+  width: 100%; /* Full width */
 }
 
 header .navbar {
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .navbar-brand {
@@ -44,9 +54,10 @@ header .navbar-brand {
   color: #ff3300; /* Red hover effect */
 }
 
-/* Main Section Styles */
+/* Section Styles */
 section {
   padding: 40px 0;
+  flex-grow: 1; /* Allow sections to take up remaining space */
 }
 
 .container {
@@ -54,125 +65,45 @@ section {
   margin: auto;
 }
 
-/* Experience Section */
-#experience {
-  background-color: #0d0d0d; /* Dark background for sections */
+/* Common styles for home, education, experience, projects, certifications, skills, about sections */
+#home, #education, #experience, #projects, #certifications, #skills, #about {
+  background-color: #0d0d0d; /* Dark background */
+  opacity: 0.9; /* Slightly less transparent */
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); /* Glow effect */
 }
 
-#experience h2 {
+#home h2, #education h2, #experience h2, #projects h2, #certifications h2, #skills h2, #about h2 {
   color: #00ff00; /* Green headings */
 }
 
-#experience h3 {
+#home h3, #education h3, #experience h3, #projects h3, #certifications h3, #skills h4, #about h4 {
   color: #00ff00;
   margin-top: 20px;
 }
 
-#experience ul {
+#experience ul, #projects ul, #certifications ul {
   list-style-type: none;
   padding-left: 20px;
 }
 
-#experience ul li {
+#experience ul li, #projects ul li, #certifications ul li {
   margin-bottom: 10px;
 }
 
-/* Projects Section */
-#projects {
-  background-color: #0d0d0d;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
-}
-
-#projects h2 {
-  color: #00ff00;
-}
-
-#projects h3 {
-  color: #00ff00;
-  margin-top: 20px;
-}
-
-#projects ul {
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-#projects ul li {
-  margin-bottom: 10px;
-}
-
-/* Skills Section */
-#skills {
-  background-color: #0d0d0d;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
-}
-
-#skills h2 {
-  color: #00ff00;
-}
-
-#skills h4 {
-  color: #00ff00;
-  margin-top: 20px;
-}
-
-#skills p {
+#skills p, #about p {
   font-size: 1.1rem;
   margin-bottom: 20px;
 }
 
-/* Certifications Section */
-#certifications {
-  background-color: #0d0d0d;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
-}
-
-#certifications h2 {
-  color: #00ff00;
-}
-
-#certifications ul {
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-#certifications ul li {
-  margin-bottom: 10px;
-}
-
-/* About Section */
-#about {
-  background-color: #0d0d0d;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
-}
-
-#about h2 {
-  color: #00ff00;
-}
-
-#about p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
   background-color: #0d0d0d;
   color: #00ff00;
   padding: 15px;
   text-align: center;
   font-size: 0.9rem;
+  margin-top: auto; /* Ensure footer stays at the bottom */
 }
 
 /* Responsive Design */
@@ -184,5 +115,21 @@ footer {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  header .navbar {
+    flex-direction: column; /* Stack navbar items vertically on small screens */
+  }
+
+  header .navbar-nav {
+    margin-top: 1rem;
+  }
+  
+  section {
+    padding: 20px 0; /* Reduce padding in sections for small screens */
+  }
+  
+  footer {
+    font-size: 0.8rem; /* Slightly smaller font for footer on small screens */
   }
 }

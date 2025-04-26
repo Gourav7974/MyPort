@@ -3,39 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Certifications | Gourav Rawat</title>
+  <title>Certifications - Gourav Rawat Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">0xGourav</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Gourav</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link active" href="certs.html">Certifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
-  <section id="certifications" class="container mt-5">
-    <h2>📜 Certifications</h2>
-    <ul>
-      <li>Google: Cybersecurity, AI Essentials</li>
-      <li>Infosys: Artificial Intelligence</li>
-      <li>GeeksforGeeks: MongoDB</li>
-      <li>IIT NPTEL: Ethical Hacking, DBMS</li>
-    </ul>
+  <!-- Certifications Section -->
+  <section id="certifications" class="content-section py-5">
+    <div class="container">
+      <h2 class="display-4 mb-4">🎓 Certifications</h2>
+
+      <div class="cert-entry">
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <p><strong>Issued by:</strong> Amazon Web Services (AWS)</p>
+        <p><strong>Completion Date:</strong> March 2025</p>
+      </div>
+
+      <div class="cert-entry">
+        <h3>Data Structures and Algorithms Specialization</h3>
+        <p><strong>Issued by:</strong> Coursera (University of California, San Diego)</p>
+        <p><strong>Completion Date:</strong> January 2025</p>
+      </div>
+    </div>
   </section>
 
-  <footer class="text-center mt-5">
-    <p>© 2025 Gourav Rawat</p>
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+      <p>📍 Raisen, MP | 📞 +91-7974241579 | 📧 grpersonal28@gmail.com</p>
+      <p>🔗 
+        <a href="https://linkedin.com/in/gourav-rawat-0a8ab7184" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Gourav7974" target="_blank">GitHub</a> |
+        <a href="https://leetcode.com/grpersonal28/" target="_blank">LeetCode</a>
+      </p>
+      <p>© 2025 Gourav Rawat | Built with ❤️ and caffeine</p>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
